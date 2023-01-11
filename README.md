@@ -1,2 +1,2 @@
 # odin-recipes2023
-revist of old assignment
+In this assignment i will be challenging my skils in HTML. This includes uses of attributes, images, hyperlinks, and many more. 
