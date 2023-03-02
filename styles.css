@@ -17,7 +17,7 @@ body{
 }
 
 .banner-container{
-    background-image: url("../images/foodbanner.png");
+    background-image: url("images/foodbanner.png");
     background-position:center;
     background-repeat:no-repeat;
     background-size: cover;
