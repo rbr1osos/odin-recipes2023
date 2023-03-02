@@ -1,0 +1,130 @@
+:root{
+    --accent-color: #EA8609;
+    --font-color-light: #fff9ec;
+    --font-color-dark:  #802200;
+    --red: #9F2B00;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;}
+
+body{
+    background-color: #F1DBBE;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+
+.banner-container{
+    background-image: url("../images/foodbanner.png");
+    padding:32px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.banner-content,
+.hero-content,
+ul{
+    display:flex;
+}
+
+.banner-content{
+    gap:96px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.hero-content{
+    flex-direction: column;
+    align-items: center;
+    padding:32px;
+}
+ul{
+    gap:64px;
+}
+li{
+    list-style: none;
+    color:white;
+    font-weight:800;
+    font-size:16px;
+}
+.container{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-rows: 8fr 2fr minmax(30px,1fr);
+}
+.splash{
+    height:auto;
+    width: 600px;
+}
+h1,
+.subtext{
+    color:var(--font-color-light);
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.subtext{
+    font-size:20px;
+    font-weight: 800;
+    width:579px;
+    text-align: center;
+    padding:16px;
+}
+
+button{
+    width:196px;
+    height:54px;
+    border:none;
+    border-radius:8px;
+    color:var(--font-color-light);
+    font-size:16px;
+    font-weight:800;
+    margin:16px 24px;
+}
+
+.popular-button{
+    background-color: #EA8609;
+}
+
+.recipe-button{
+    background-color: #9F2B00;
+}
+
+
+/*       Recipe Container       */
+.recipe-container{
+    padding:32px 64px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.trending-title{
+    color:var(--red);
+    font-size:23px;
+    font-weight: 800;
+}
+
+.recipe-options{
+    display:flex;
+    gap:32px;
+}
+
+.recipe-image{
+    padding:16px 16px 16px 0;
+}
+
+.footer-content{
+      color:var(--font-color-light);
+    font-weight:800;
+    padding:32px 8px;
+    text-align: center;
+    
+}
