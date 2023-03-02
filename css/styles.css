@@ -18,11 +18,11 @@ body{
 
 .banner-container{
     background-image: url("../images/foodbanner.png");
-    padding:32px;
     background-position:center;
     background-repeat:no-repeat;
     background-size: cover;
     position:relative;
+    grid-area: 1/1/2/4;
 }
 
 .banner-content,
@@ -34,12 +34,12 @@ ul{
 .banner-content{
     gap:96px;
     justify-content: center;
-    margin-bottom: 32px;
+    padding-top:32px;
 }
 .hero-content{
     flex-direction: column;
     align-items: center;
-    padding:32px;
+    padding:24px;
 }
 ul{
     gap:64px;
@@ -54,7 +54,7 @@ li{
     width:100%;
     height:100%;
     display:grid;
-    grid-template-rows: 8fr 2fr minmax(30px,1fr);
+    grid-template: 8fr 2fr minmax(30px,1fr) / 1fr;
 }
 .splash{
     height:auto;
@@ -99,21 +99,24 @@ button{
 
 
 /*       Recipe Container       */
-.recipe-container{
+ .recipe-container{
     padding:32px 64px;
     display:flex;
     flex-direction: column;
     align-items:center;
+    grid-area: 2/1/3/2;
+
 }
 
 .trending-title{
     color:var(--red);
-    font-size:23px;
+    font-size:24px;
     font-weight: 800;
 }
 
 .recipe-options{
     display:flex;
+
     gap:32px;
 }
 
@@ -121,10 +124,25 @@ button{
     padding:16px 16px 16px 0;
 }
 
+.recipe-image:hover{
+    opacity:80%;
+}
+
+a.food-name{
+    display:flex;
+    text-decoration: none;
+    color:var(--red);
+    font-size:20px;
+    font-weight:700;
+} 
+
+.footer{
+    grid-area: 3/1/4/2;
+
+}
 .footer-content{
       color:var(--font-color-light);
     font-weight:800;
-    padding:32px 8px;
     text-align: center;
-    
+
 }

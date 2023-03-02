@@ -1,0 +1,73 @@
+:root{
+    --accent-color: #EA8609;
+    --font-color-light: #fff9ec;
+    --font-color-dark:  #802200;
+    --red: #9F2B00;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;}
+
+body{
+    background-color: #F1DBBE;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+.container{
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template: 1fr 8fr / 1fr 1fr;
+}
+
+.banner-content{
+    background-color: aquamarine;
+    grid-area:1/1/2/3;
+}
+
+.media-container{
+    background-color: blue;
+    grid-area:2/1/3/2;
+}
+.direction-container{
+grid-area:2/2/3/3;
+}
+
+.banner-content,
+.hero-content,
+ul{
+    display:flex;
+}
+
+.banner-content{
+    gap:96px;
+    justify-content: center;
+}
+.hero-content{
+    flex-direction: column;
+    align-items: center;
+    padding:24px;
+}
+
+.direction-container{
+    overflow: scroll;
+}
+
+.banner-links{
+    gap:64px;
+    display:flex;
+}
+
+li{
+    list-style: none;
+    color:white;
+    font-weight:800;
+    font-size:16px;
+}
+
+.ingredients-list{
+    display:flex;
+    flex-direction: column;
+}
